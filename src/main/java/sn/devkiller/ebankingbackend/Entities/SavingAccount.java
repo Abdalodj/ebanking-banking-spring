@@ -9,7 +9,7 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 @Entity
-@DiscriminatorValue("SA")
+/* @DiscriminatorValue("SA") */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
