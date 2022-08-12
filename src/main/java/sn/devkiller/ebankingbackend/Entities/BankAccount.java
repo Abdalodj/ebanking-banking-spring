@@ -8,6 +8,7 @@ import javax.persistence.DiscriminatorType;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
@@ -34,6 +35,6 @@ public class BankAccount {
   private AccountStatus status;
   @ManyToOne
   private Customer customer;
-  @OneToMany(mappedBy = "bankAccount")
+  @OneToMany(mappedBy = "bankAccount", fetch = FetchType.EAGER)
   private List<AccountOperation> accountOperation;
 }
