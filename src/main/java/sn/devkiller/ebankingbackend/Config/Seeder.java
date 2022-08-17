@@ -10,15 +10,15 @@ import org.springframework.context.annotation.Configuration;
 
 import sn.devkiller.ebankingbackend.Entities.AccountOperation;
 import sn.devkiller.ebankingbackend.Entities.CurrentAccount;
-import sn.devkiller.ebankingbackend.Entities.Customer;
 import sn.devkiller.ebankingbackend.Entities.SavingAccount;
 import sn.devkiller.ebankingbackend.Enums.AccountStatus;
 import sn.devkiller.ebankingbackend.Enums.OperationType;
+import sn.devkiller.ebankingbackend.Entities.Customer;
 import sn.devkiller.ebankingbackend.Repositories.AccountOperationRepository;
 import sn.devkiller.ebankingbackend.Repositories.BankAccountRepository;
 import sn.devkiller.ebankingbackend.Repositories.CustomerReposittory;
 
-@Configuration
+/* @Configuration */
 public class Seeder {
   /* @Bean */
 	CommandLineRunner start(CustomerReposittory cReposittory, BankAccountRepository bRepository,
